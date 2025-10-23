@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Homework1 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner index1 = new Scanner(System.in);
 
         // ========================================
         // EXERCISE 1: Hello World
@@ -11,7 +11,9 @@ public class Homework1 {
         // TODO: Print "Hello, World!" to the console
 
 
-        System.out.println("\n--- Exercise 1 Complete! ---\n");
+        System.out.println("Hello, World!");
+
+
 
 
         // ========================================
@@ -19,11 +21,14 @@ public class Homework1 {
         // Difficulty: ⭐⭐
         // ========================================
         // TODO: Ask the user for their name, then greet them personally
-        // Example output: "Hello, Alice!"
+        // Example output: "hello!, Alice!"
         // HINT: Use scanner.nextLine() to read a line of text
 
 
-        System.out.println("\n--- Exercise 2 Complete! ---\n");
+        System.out.println("What is your name");
+        String name = index1.nextLine();
+        System.out.println("hello!," + name);
+
 
 
         // ========================================
@@ -32,12 +37,17 @@ public class Homework1 {
         // ========================================
         // TODO: Ask for the user's birth year
         // Calculate their age (assume current year is 2025)
-        // Print: "You are [age] years old"
+        // Print: "You're [age] years old"
         // HINT: Use scanner.nextInt() to read a number
         // HINT: Don't forget scanner.nextLine() after nextInt()!
 
 
-        System.out.println("\n--- Exercise 3 Complete! ---\n");
+        System.out.println("What is your birth year?");
+        int birthYear = index1.nextInt();
+        int age = 2025 -birthYear;
+        System.out.println("You're " + age + " years old");
+
+
 
 
         // ========================================
@@ -49,7 +59,24 @@ public class Homework1 {
         // HINT: Use scanner.nextDouble() for decimal numbers
 
 
-        System.out.println("\n--- Exercise 4 Complete! ---\n");
+        System.out.println("May I get two numbers from you, " + name + "?");
+        System.out.println("Give me the first number:");
+        double num1 = index1.nextDouble();
+        System.out.println("Give me the second number:");
+        double num2 = index1.nextDouble();
+
+
+
+        double sum = num1 + num2;
+        double difference = num1 - num2;
+        double product = num1 * num2;
+        double quotient = num1 / num2;
+
+        System.out.println("Sum: " + sum);
+        System.out.println("Difference: " + difference);
+        System.out.println("Product: " + product);
+        System.out.println("Quotient: " + quotient);
+
 
 
     }
